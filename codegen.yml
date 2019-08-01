@@ -1,0 +1,19 @@
+schema:
+  - https://api.github.com/graphql:
+      headers:
+        Authorization: bearer ${TOKEN}
+documents:
+  - ./src/app/**/*.component.ts
+  - ./src/graphql/fragments/**/*.ts
+  - ./src/graphql/queries/**/*.ts
+overwrite: true
+generates:
+  ./src/graphql/fragmentTypes.json:
+    plugins:
+      - fragment-matcher
+  ./src/graphql/types.ts:
+    plugins:
+      - add: '/* tslint:disable */'
+      - typescript
+      - typescript-operations
+      - typescript-apollo-angular

@@ -1,0 +1,19 @@
+:host {
+  display: block;
+}
+
+.container {
+  height: 48px;
+  font-size: 12px;
+
+  .bio {
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  mat-icon {
+    width: 12px !important;
+    height: 12px !important;
+    font-size: 12px !important;
+  }
+}
