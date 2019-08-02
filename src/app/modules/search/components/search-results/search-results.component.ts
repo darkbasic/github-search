@@ -51,6 +51,7 @@ export class SearchResultsComponent implements OnInit, OnDestroy {
           break;
       }
 
+      this.pageIndex = 0;
       this.searchTerm = searchTerm;
       this.dataSource = new SearchResultsDataSource(this.searchGQL);
       this.dataSource.loadSearchResults(this.type, searchTerm, this.pageSize);
