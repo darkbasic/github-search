@@ -8,7 +8,7 @@ import {
   ViewChild,
   ViewContainerRef
 } from '@angular/core';
-import { SearchResultItemFragment, SearchType } from '../../../../../graphql/types';
+import {RepositoryFragment, SearchResultItemFragment, SearchType, UserFragment} from '../../../../../graphql/types';
 import { SearchUserItemComponent } from '../search-user-item/search-user-item.component';
 import { SearchRepositoryItemComponent } from '../search-repository-item/search-repository-item.component';
 
@@ -20,7 +20,7 @@ import { SearchRepositoryItemComponent } from '../search-repository-item/search-
   styleUrls: ['./search-item.component.scss']
 })
 export class SearchItemComponent implements OnInit, AfterContentInit {
-  @Input() searchItem: SearchResultItemFragment;
+  @Input() searchItem: RepositoryFragment | UserFragment;
   @Input() type: SearchType;
 
   @ViewChild('entry', {static: true, read: ViewContainerRef}) entry: ViewContainerRef;
