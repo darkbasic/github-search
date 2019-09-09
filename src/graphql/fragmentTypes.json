@@ -291,6 +291,177 @@
             "name": "RegistryPackageTag"
           },
           {
+            "name": "MembersCanDeleteReposClearAuditEntry"
+          },
+          {
+            "name": "MembersCanDeleteReposDisableAuditEntry"
+          },
+          {
+            "name": "MembersCanDeleteReposEnableAuditEntry"
+          },
+          {
+            "name": "OauthApplicationCreateAuditEntry"
+          },
+          {
+            "name": "OrgAddBillingManagerAuditEntry"
+          },
+          {
+            "name": "OrgAddMemberAuditEntry"
+          },
+          {
+            "name": "OrgBlockUserAuditEntry"
+          },
+          {
+            "name": "OrgConfigDisableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "OrgConfigEnableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "OrgDisableOauthAppRestrictionsAuditEntry"
+          },
+          {
+            "name": "OrgDisableSamlAuditEntry"
+          },
+          {
+            "name": "OrgDisableTwoFactorRequirementAuditEntry"
+          },
+          {
+            "name": "OrgEnableOauthAppRestrictionsAuditEntry"
+          },
+          {
+            "name": "OrgEnableSamlAuditEntry"
+          },
+          {
+            "name": "OrgEnableTwoFactorRequirementAuditEntry"
+          },
+          {
+            "name": "OrgInviteMemberAuditEntry"
+          },
+          {
+            "name": "OrgInviteToBusinessAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessApprovedAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessDeniedAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessRequestedAuditEntry"
+          },
+          {
+            "name": "OrgRemoveBillingManagerAuditEntry"
+          },
+          {
+            "name": "OrgRemoveMemberAuditEntry"
+          },
+          {
+            "name": "OrgRemoveOutsideCollaboratorAuditEntry"
+          },
+          {
+            "name": "OrgRestoreMemberAuditEntry"
+          },
+          {
+            "name": "OrgUnblockUserAuditEntry"
+          },
+          {
+            "name": "OrgUpdateDefaultRepositoryPermissionAuditEntry"
+          },
+          {
+            "name": "OrgUpdateMemberAuditEntry"
+          },
+          {
+            "name": "OrgUpdateMemberRepositoryCreationPermissionAuditEntry"
+          },
+          {
+            "name": "OrgUpdateMemberRepositoryInvitationPermissionAuditEntry"
+          },
+          {
+            "name": "PrivateRepositoryForkingDisableAuditEntry"
+          },
+          {
+            "name": "PrivateRepositoryForkingEnableAuditEntry"
+          },
+          {
+            "name": "RepoAccessAuditEntry"
+          },
+          {
+            "name": "RepoAddMemberAuditEntry"
+          },
+          {
+            "name": "RepoAddTopicAuditEntry"
+          },
+          {
+            "name": "RepoArchivedAuditEntry"
+          },
+          {
+            "name": "RepoChangeMergeSettingAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableContributorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableSockpuppetDisallowedAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableContributorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableSockpuppetDisallowedAuditEntry"
+          },
+          {
+            "name": "RepoConfigLockAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigUnlockAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoCreateAuditEntry"
+          },
+          {
+            "name": "RepoDestroyAuditEntry"
+          },
+          {
+            "name": "RepoRemoveMemberAuditEntry"
+          },
+          {
+            "name": "RepoRemoveTopicAuditEntry"
+          },
+          {
+            "name": "RepositoryVisibilityChangeDisableAuditEntry"
+          },
+          {
+            "name": "RepositoryVisibilityChangeEnableAuditEntry"
+          },
+          {
+            "name": "TeamAddMemberAuditEntry"
+          },
+          {
+            "name": "TeamAddRepositoryAuditEntry"
+          },
+          {
+            "name": "TeamChangeParentTeamAuditEntry"
+          },
+          {
+            "name": "TeamRemoveMemberAuditEntry"
+          },
+          {
+            "name": "TeamRemoveRepositoryAuditEntry"
+          },
+          {
             "name": "OrganizationIdentityProvider"
           },
           {
@@ -721,6 +892,9 @@
           },
           {
             "name": "Team"
+          },
+          {
+            "name": "App"
           }
         ]
       },
@@ -1375,6 +1549,732 @@
           },
           {
             "name": "RestrictedContribution"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "OrganizationAuditEntry",
+        "possibleTypes": [
+          {
+            "name": "MembersCanDeleteReposClearAuditEntry"
+          },
+          {
+            "name": "MembersCanDeleteReposDisableAuditEntry"
+          },
+          {
+            "name": "MembersCanDeleteReposEnableAuditEntry"
+          },
+          {
+            "name": "OauthApplicationCreateAuditEntry"
+          },
+          {
+            "name": "OrgAddBillingManagerAuditEntry"
+          },
+          {
+            "name": "OrgAddMemberAuditEntry"
+          },
+          {
+            "name": "OrgBlockUserAuditEntry"
+          },
+          {
+            "name": "OrgConfigDisableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "OrgConfigEnableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "OrgDisableOauthAppRestrictionsAuditEntry"
+          },
+          {
+            "name": "OrgDisableSamlAuditEntry"
+          },
+          {
+            "name": "OrgDisableTwoFactorRequirementAuditEntry"
+          },
+          {
+            "name": "OrgEnableOauthAppRestrictionsAuditEntry"
+          },
+          {
+            "name": "OrgEnableSamlAuditEntry"
+          },
+          {
+            "name": "OrgEnableTwoFactorRequirementAuditEntry"
+          },
+          {
+            "name": "OrgInviteMemberAuditEntry"
+          },
+          {
+            "name": "OrgInviteToBusinessAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessApprovedAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessDeniedAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessRequestedAuditEntry"
+          },
+          {
+            "name": "OrgRemoveBillingManagerAuditEntry"
+          },
+          {
+            "name": "OrgRemoveMemberAuditEntry"
+          },
+          {
+            "name": "OrgRemoveOutsideCollaboratorAuditEntry"
+          },
+          {
+            "name": "OrgRestoreMemberAuditEntry"
+          },
+          {
+            "name": "OrgUnblockUserAuditEntry"
+          },
+          {
+            "name": "OrgUpdateDefaultRepositoryPermissionAuditEntry"
+          },
+          {
+            "name": "OrgUpdateMemberAuditEntry"
+          },
+          {
+            "name": "OrgUpdateMemberRepositoryCreationPermissionAuditEntry"
+          },
+          {
+            "name": "OrgUpdateMemberRepositoryInvitationPermissionAuditEntry"
+          },
+          {
+            "name": "PrivateRepositoryForkingDisableAuditEntry"
+          },
+          {
+            "name": "PrivateRepositoryForkingEnableAuditEntry"
+          },
+          {
+            "name": "RepoAccessAuditEntry"
+          },
+          {
+            "name": "RepoAddMemberAuditEntry"
+          },
+          {
+            "name": "RepoAddTopicAuditEntry"
+          },
+          {
+            "name": "RepoArchivedAuditEntry"
+          },
+          {
+            "name": "RepoChangeMergeSettingAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableContributorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableSockpuppetDisallowedAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableContributorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableSockpuppetDisallowedAuditEntry"
+          },
+          {
+            "name": "RepoConfigLockAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigUnlockAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoCreateAuditEntry"
+          },
+          {
+            "name": "RepoDestroyAuditEntry"
+          },
+          {
+            "name": "RepoRemoveMemberAuditEntry"
+          },
+          {
+            "name": "RepoRemoveTopicAuditEntry"
+          },
+          {
+            "name": "RepositoryVisibilityChangeDisableAuditEntry"
+          },
+          {
+            "name": "RepositoryVisibilityChangeEnableAuditEntry"
+          },
+          {
+            "name": "TeamAddMemberAuditEntry"
+          },
+          {
+            "name": "TeamAddRepositoryAuditEntry"
+          },
+          {
+            "name": "TeamChangeParentTeamAuditEntry"
+          },
+          {
+            "name": "TeamRemoveMemberAuditEntry"
+          },
+          {
+            "name": "TeamRemoveRepositoryAuditEntry"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "AuditEntry",
+        "possibleTypes": [
+          {
+            "name": "MembersCanDeleteReposClearAuditEntry"
+          },
+          {
+            "name": "MembersCanDeleteReposDisableAuditEntry"
+          },
+          {
+            "name": "MembersCanDeleteReposEnableAuditEntry"
+          },
+          {
+            "name": "OauthApplicationCreateAuditEntry"
+          },
+          {
+            "name": "OrgAddBillingManagerAuditEntry"
+          },
+          {
+            "name": "OrgAddMemberAuditEntry"
+          },
+          {
+            "name": "OrgBlockUserAuditEntry"
+          },
+          {
+            "name": "OrgConfigDisableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "OrgConfigEnableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "OrgDisableOauthAppRestrictionsAuditEntry"
+          },
+          {
+            "name": "OrgDisableSamlAuditEntry"
+          },
+          {
+            "name": "OrgDisableTwoFactorRequirementAuditEntry"
+          },
+          {
+            "name": "OrgEnableOauthAppRestrictionsAuditEntry"
+          },
+          {
+            "name": "OrgEnableSamlAuditEntry"
+          },
+          {
+            "name": "OrgEnableTwoFactorRequirementAuditEntry"
+          },
+          {
+            "name": "OrgInviteMemberAuditEntry"
+          },
+          {
+            "name": "OrgInviteToBusinessAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessApprovedAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessDeniedAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessRequestedAuditEntry"
+          },
+          {
+            "name": "OrgRemoveBillingManagerAuditEntry"
+          },
+          {
+            "name": "OrgRemoveMemberAuditEntry"
+          },
+          {
+            "name": "OrgRemoveOutsideCollaboratorAuditEntry"
+          },
+          {
+            "name": "OrgRestoreMemberAuditEntry"
+          },
+          {
+            "name": "OrgUnblockUserAuditEntry"
+          },
+          {
+            "name": "OrgUpdateDefaultRepositoryPermissionAuditEntry"
+          },
+          {
+            "name": "OrgUpdateMemberAuditEntry"
+          },
+          {
+            "name": "OrgUpdateMemberRepositoryCreationPermissionAuditEntry"
+          },
+          {
+            "name": "OrgUpdateMemberRepositoryInvitationPermissionAuditEntry"
+          },
+          {
+            "name": "PrivateRepositoryForkingDisableAuditEntry"
+          },
+          {
+            "name": "PrivateRepositoryForkingEnableAuditEntry"
+          },
+          {
+            "name": "RepoAccessAuditEntry"
+          },
+          {
+            "name": "RepoAddMemberAuditEntry"
+          },
+          {
+            "name": "RepoAddTopicAuditEntry"
+          },
+          {
+            "name": "RepoArchivedAuditEntry"
+          },
+          {
+            "name": "RepoChangeMergeSettingAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableContributorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableSockpuppetDisallowedAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableContributorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableSockpuppetDisallowedAuditEntry"
+          },
+          {
+            "name": "RepoConfigLockAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigUnlockAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoCreateAuditEntry"
+          },
+          {
+            "name": "RepoDestroyAuditEntry"
+          },
+          {
+            "name": "RepoRemoveMemberAuditEntry"
+          },
+          {
+            "name": "RepoRemoveTopicAuditEntry"
+          },
+          {
+            "name": "RepositoryVisibilityChangeDisableAuditEntry"
+          },
+          {
+            "name": "RepositoryVisibilityChangeEnableAuditEntry"
+          },
+          {
+            "name": "TeamAddMemberAuditEntry"
+          },
+          {
+            "name": "TeamAddRepositoryAuditEntry"
+          },
+          {
+            "name": "TeamChangeParentTeamAuditEntry"
+          },
+          {
+            "name": "TeamRemoveMemberAuditEntry"
+          },
+          {
+            "name": "TeamRemoveRepositoryAuditEntry"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "AuditEntryActor",
+        "possibleTypes": [
+          {
+            "name": "Bot"
+          },
+          {
+            "name": "Organization"
+          },
+          {
+            "name": "User"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "EnterpriseAuditEntryData",
+        "possibleTypes": [
+          {
+            "name": "MembersCanDeleteReposClearAuditEntry"
+          },
+          {
+            "name": "MembersCanDeleteReposDisableAuditEntry"
+          },
+          {
+            "name": "MembersCanDeleteReposEnableAuditEntry"
+          },
+          {
+            "name": "OrgInviteToBusinessAuditEntry"
+          },
+          {
+            "name": "PrivateRepositoryForkingDisableAuditEntry"
+          },
+          {
+            "name": "PrivateRepositoryForkingEnableAuditEntry"
+          },
+          {
+            "name": "RepositoryVisibilityChangeDisableAuditEntry"
+          },
+          {
+            "name": "RepositoryVisibilityChangeEnableAuditEntry"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "OrganizationAuditEntryData",
+        "possibleTypes": [
+          {
+            "name": "MembersCanDeleteReposClearAuditEntry"
+          },
+          {
+            "name": "MembersCanDeleteReposDisableAuditEntry"
+          },
+          {
+            "name": "MembersCanDeleteReposEnableAuditEntry"
+          },
+          {
+            "name": "OauthApplicationCreateAuditEntry"
+          },
+          {
+            "name": "OrgAddBillingManagerAuditEntry"
+          },
+          {
+            "name": "OrgAddMemberAuditEntry"
+          },
+          {
+            "name": "OrgBlockUserAuditEntry"
+          },
+          {
+            "name": "OrgConfigDisableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "OrgConfigEnableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "OrgDisableOauthAppRestrictionsAuditEntry"
+          },
+          {
+            "name": "OrgDisableSamlAuditEntry"
+          },
+          {
+            "name": "OrgDisableTwoFactorRequirementAuditEntry"
+          },
+          {
+            "name": "OrgEnableOauthAppRestrictionsAuditEntry"
+          },
+          {
+            "name": "OrgEnableSamlAuditEntry"
+          },
+          {
+            "name": "OrgEnableTwoFactorRequirementAuditEntry"
+          },
+          {
+            "name": "OrgInviteMemberAuditEntry"
+          },
+          {
+            "name": "OrgInviteToBusinessAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessApprovedAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessDeniedAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessRequestedAuditEntry"
+          },
+          {
+            "name": "OrgRemoveBillingManagerAuditEntry"
+          },
+          {
+            "name": "OrgRemoveMemberAuditEntry"
+          },
+          {
+            "name": "OrgRemoveOutsideCollaboratorAuditEntry"
+          },
+          {
+            "name": "OrgRestoreMemberAuditEntry"
+          },
+          {
+            "name": "OrgRestoreMemberMembershipOrganizationAuditEntryData"
+          },
+          {
+            "name": "OrgUnblockUserAuditEntry"
+          },
+          {
+            "name": "OrgUpdateDefaultRepositoryPermissionAuditEntry"
+          },
+          {
+            "name": "OrgUpdateMemberAuditEntry"
+          },
+          {
+            "name": "OrgUpdateMemberRepositoryCreationPermissionAuditEntry"
+          },
+          {
+            "name": "OrgUpdateMemberRepositoryInvitationPermissionAuditEntry"
+          },
+          {
+            "name": "PrivateRepositoryForkingDisableAuditEntry"
+          },
+          {
+            "name": "PrivateRepositoryForkingEnableAuditEntry"
+          },
+          {
+            "name": "RepoAccessAuditEntry"
+          },
+          {
+            "name": "RepoAddMemberAuditEntry"
+          },
+          {
+            "name": "RepoAddTopicAuditEntry"
+          },
+          {
+            "name": "RepoArchivedAuditEntry"
+          },
+          {
+            "name": "RepoChangeMergeSettingAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableContributorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableSockpuppetDisallowedAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableContributorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableSockpuppetDisallowedAuditEntry"
+          },
+          {
+            "name": "RepoConfigLockAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigUnlockAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoCreateAuditEntry"
+          },
+          {
+            "name": "RepoDestroyAuditEntry"
+          },
+          {
+            "name": "RepoRemoveMemberAuditEntry"
+          },
+          {
+            "name": "RepoRemoveTopicAuditEntry"
+          },
+          {
+            "name": "RepositoryVisibilityChangeDisableAuditEntry"
+          },
+          {
+            "name": "RepositoryVisibilityChangeEnableAuditEntry"
+          },
+          {
+            "name": "TeamAddMemberAuditEntry"
+          },
+          {
+            "name": "TeamAddRepositoryAuditEntry"
+          },
+          {
+            "name": "TeamChangeParentTeamAuditEntry"
+          },
+          {
+            "name": "TeamRemoveMemberAuditEntry"
+          },
+          {
+            "name": "TeamRemoveRepositoryAuditEntry"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "OauthApplicationAuditEntryData",
+        "possibleTypes": [
+          {
+            "name": "OauthApplicationCreateAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessApprovedAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessDeniedAuditEntry"
+          },
+          {
+            "name": "OrgOauthAppAccessRequestedAuditEntry"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "OrgRestoreMemberAuditEntryMembership",
+        "possibleTypes": [
+          {
+            "name": "OrgRestoreMemberMembershipOrganizationAuditEntryData"
+          },
+          {
+            "name": "OrgRestoreMemberMembershipRepositoryAuditEntryData"
+          },
+          {
+            "name": "OrgRestoreMemberMembershipTeamAuditEntryData"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "RepositoryAuditEntryData",
+        "possibleTypes": [
+          {
+            "name": "OrgRestoreMemberMembershipRepositoryAuditEntryData"
+          },
+          {
+            "name": "PrivateRepositoryForkingDisableAuditEntry"
+          },
+          {
+            "name": "PrivateRepositoryForkingEnableAuditEntry"
+          },
+          {
+            "name": "RepoAccessAuditEntry"
+          },
+          {
+            "name": "RepoAddMemberAuditEntry"
+          },
+          {
+            "name": "RepoAddTopicAuditEntry"
+          },
+          {
+            "name": "RepoArchivedAuditEntry"
+          },
+          {
+            "name": "RepoChangeMergeSettingAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableContributorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigDisableSockpuppetDisallowedAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableCollaboratorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableContributorsOnlyAuditEntry"
+          },
+          {
+            "name": "RepoConfigEnableSockpuppetDisallowedAuditEntry"
+          },
+          {
+            "name": "RepoConfigLockAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoConfigUnlockAnonymousGitAccessAuditEntry"
+          },
+          {
+            "name": "RepoCreateAuditEntry"
+          },
+          {
+            "name": "RepoDestroyAuditEntry"
+          },
+          {
+            "name": "RepoRemoveMemberAuditEntry"
+          },
+          {
+            "name": "RepoRemoveTopicAuditEntry"
+          },
+          {
+            "name": "TeamAddRepositoryAuditEntry"
+          },
+          {
+            "name": "TeamRemoveRepositoryAuditEntry"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "TeamAuditEntryData",
+        "possibleTypes": [
+          {
+            "name": "OrgRestoreMemberMembershipTeamAuditEntryData"
+          },
+          {
+            "name": "TeamAddMemberAuditEntry"
+          },
+          {
+            "name": "TeamAddRepositoryAuditEntry"
+          },
+          {
+            "name": "TeamChangeParentTeamAuditEntry"
+          },
+          {
+            "name": "TeamRemoveMemberAuditEntry"
+          },
+          {
+            "name": "TeamRemoveRepositoryAuditEntry"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "TopicAuditEntryData",
+        "possibleTypes": [
+          {
+            "name": "RepoAddTopicAuditEntry"
+          },
+          {
+            "name": "RepoRemoveTopicAuditEntry"
           }
         ]
       },
